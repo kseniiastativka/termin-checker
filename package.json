@@ -1,0 +1,23 @@
+{
+  "name": "auto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "CHATID=${CHATID} TOKEN=${TOKEN} node ./page.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kseniiastativka/Auto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kseniiastativka/Auto/issues"
+  },
+  "homepage": "https://github.com/kseniiastativka/Auto#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "puppeteer": "^3.2.0"
+  }
+}
