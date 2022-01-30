@@ -4,6 +4,7 @@
 name: check-termin
 
 on:
+  workflow_dispatch:
   schedule:
       - cron: '*/20 6-16 * * 1-5'
       - cron: '0 17-21 * * 1-5'
