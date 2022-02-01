@@ -10,7 +10,7 @@ const url = 'https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=
     await page.goto(url);
 
     async function checkIfTerminAvailable() {
-        const availableTermin = await page.$(".calendar-month-table .buchbar");
+        const availableTermin = await page.$(".calendar-month-table:first-child .buchbar");
 
         if (availableTermin !== null) {
             await sendNotification(`You can book a termin 😈 ${url}`, true);
